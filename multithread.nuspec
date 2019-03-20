@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Kifreak.MultiThread</id>
+    <version>1.0.0</version>
+    <owners>Kifreak</owners>
+    <authors>Kifreak</authors>
+    <description>
+      Library for make an easy multithread application with progress count.
+    </description>
+    <language>en-UK</language>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <iconUrl>https://raw.githubusercontent.com/kifreak/media/master/multithread.png</iconUrl>
+    <projectUrl>https://kifreak.com</projectUrl>
+    <tags>Multithread</tags>
+    <copyright>Copyright 2019, Kifreak</copyright>
+    <releaseNotes>
+      Adapted to NetStandar and NetCore
+    </releaseNotes>
+    <dependencies>      
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework=".NETFramework4.5.1" />
+      <group targetFramework=".NETFramework4.5.2" />
+      <group targetFramework=".NETFramework4.6" />
+      <group targetFramework=".NETFramework4.6.1" />
+      <group targetFramework=".NETFramework4.6.2" />
+	    <group targetFramework=".NETCoreApp2.0" />
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>    
+    <file src="Kifreak.MultiThread\bin\Release\net45\Kifreak.MultiThread.dll" target="lib\net45\Kifreak.MultiThread.dll" />
+    <file src="Kifreak.MultiThread\bin\Release\net46\Kifreak.MultiThread.dll" target="lib\net46\Kifreak.MultiThread.dll" />
+    <file src="Kifreak.MultiThread\bin\Release\net461\Kifreak.MultiThread.dll" target="lib\net461\Kifreak.MultiThread.dll" />
+    <file src="Kifreak.MultiThread\bin\Release\net462\Kifreak.MultiThread.dll" target="lib\net462\Kifreak.MultiThread.dll" />
+    <file src="Kifreak.MultiThread\bin\Release\netstandard2.0\Kifreak.MultiThread.dll" target="lib\netstandard2.0\Kifreak.MultiThread.dll" />
+	<file src="Kifreak.MultiThread\bin\Release\netcoreapp2.0\Kifreak.MultiThread.dll" target="lib\netcoreapp2.0\Kifreak.MultiThread.dll" />
+  </files>
+</package>

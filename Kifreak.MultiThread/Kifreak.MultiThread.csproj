@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.0;net45;net451;net452;net46;net461;net462</TargetFrameworks>
+  </PropertyGroup>
+
+  <Import Project="..\Kifreak.MultiThread.Shared\Kifreak.MultiThread.Shared.projitems" Label="Shared" />
+  
+</Project>

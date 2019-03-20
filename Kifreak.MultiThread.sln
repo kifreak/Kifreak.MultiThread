@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Kifreak.MultiThread.Shared", "Kifreak.MultiThread.Shared\Kifreak.MultiThread.Shared.shproj", "{BD40CB31-2558-42C1-802D-111CA8211D9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kifreak.MultiThread", "Kifreak.MultiThread\Kifreak.MultiThread.csproj", "{CB3C6E00-7734-453F-8818-5EEA3C458627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kifreak.MultiThread.MainUnitTest", "Kifreak.MultiThread.MainUnitTest\Kifreak.MultiThread.MainUnitTest.csproj", "{81D43C61-9C46-45C9-B551-B9F6624DFA66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{42CAA747-D369-426D-B2FA-3172326CF1F1}"
+	ProjectSection(SolutionItems) = preProject
+		multithread.nuspec = multithread.nuspec
+		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Kifreak.MultiThread.Shared\Kifreak.MultiThread.Shared.projitems*{bd40cb31-2558-42c1-802d-111ca8211d9d}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB3C6E00-7734-453F-8818-5EEA3C458627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB3C6E00-7734-453F-8818-5EEA3C458627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB3C6E00-7734-453F-8818-5EEA3C458627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB3C6E00-7734-453F-8818-5EEA3C458627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81D43C61-9C46-45C9-B551-B9F6624DFA66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D43C61-9C46-45C9-B551-B9F6624DFA66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D43C61-9C46-45C9-B551-B9F6624DFA66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D43C61-9C46-45C9-B551-B9F6624DFA66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5396520E-430A-4C6D-A7EB-000DF9175F0F}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://kistudio.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Kifreak.MultiThread.Shared\\Kifreak.MultiThread.Shared.shproj
+		SccProjectName1 = Kifreak.MultiThread.Shared
+		SccLocalPath1 = Kifreak.MultiThread.Shared
+		SccProjectUniqueName2 = Kifreak.MultiThread.Shared\\Kifreak.MultiThread.Shared.projitems
+		SccProjectTopLevelParentUniqueName2 = Kifreak.MultiThread.Shared\\Kifreak.MultiThread.Shared.shproj
+		SccProjectName2 = Kifreak.MultiThread.Shared
+		SccLocalPath2 = Kifreak.MultiThread.Shared
+		SccProjectUniqueName3 = Kifreak.MultiThread\\Kifreak.MultiThread.csproj
+		SccProjectName3 = Kifreak.MultiThread
+		SccLocalPath3 = Kifreak.MultiThread
+		SccProjectUniqueName4 = Kifreak.MultiThread.MainUnitTest\\Kifreak.MultiThread.MainUnitTest.csproj
+		SccProjectName4 = Kifreak.MultiThread.MainUnitTest
+		SccLocalPath4 = Kifreak.MultiThread.MainUnitTest
+	EndGlobalSection
+EndGlobal
