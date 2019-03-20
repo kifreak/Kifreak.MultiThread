@@ -5,12 +5,13 @@ VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Kifreak.MultiThread.Shared", "Kifreak.MultiThread.Shared\Kifreak.MultiThread.Shared.shproj", "{BD40CB31-2558-42C1-802D-111CA8211D9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kifreak.MultiThread", "Kifreak.MultiThread\Kifreak.MultiThread.csproj", "{CB3C6E00-7734-453F-8818-5EEA3C458627}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kifreak.MultiThread", "Kifreak.MultiThread\Kifreak.MultiThread.csproj", "{CB3C6E00-7734-453F-8818-5EEA3C458627}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kifreak.MultiThread.MainUnitTest", "Kifreak.MultiThread.MainUnitTest\Kifreak.MultiThread.MainUnitTest.csproj", "{81D43C61-9C46-45C9-B551-B9F6624DFA66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kifreak.MultiThread.MainUnitTest", "Kifreak.MultiThread.MainUnitTest\Kifreak.MultiThread.MainUnitTest.csproj", "{81D43C61-9C46-45C9-B551-B9F6624DFA66}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{42CAA747-D369-426D-B2FA-3172326CF1F1}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		multithread.nuspec = multithread.nuspec
 		Readme.txt = Readme.txt
 	EndProjectSection
