@@ -29,7 +29,9 @@
     </dependencies>
   </metadata>
   <files>    
-    <file src="Kifreak.MultiThread\bin\Release\net45\Kifreak.MultiThread.dll" target="lib\net45\Kifreak.MultiThread.dll" />
+    <file src="Kifreak.MultiThread\bin\Release\net47\Kifreak.MultiThread.dll" target="lib\net47\Kifreak.MultiThread.dll" />
+    <file src="Kifreak.MultiThread\bin\Release\net471\Kifreak.MultiThread.dll" target="lib\net471\Kifreak.MultiThread.dll" />
+    <file src="Kifreak.MultiThread\bin\Release\net472\Kifreak.MultiThread.dll" target="lib\net472\Kifreak.MultiThread.dll" />
     <file src="Kifreak.MultiThread\bin\Release\net46\Kifreak.MultiThread.dll" target="lib\net46\Kifreak.MultiThread.dll" />
     <file src="Kifreak.MultiThread\bin\Release\net461\Kifreak.MultiThread.dll" target="lib\net461\Kifreak.MultiThread.dll" />
     <file src="Kifreak.MultiThread\bin\Release\net462\Kifreak.MultiThread.dll" target="lib\net462\Kifreak.MultiThread.dll" />
