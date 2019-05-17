@@ -8,9 +8,15 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netcoreapp2.0;net45;net451;net452;net46;net461;net462</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.0;net46;net461;net462;net47;net471;net472</TargetFrameworks>
   </PropertyGroup>
 
   <Import Project="..\Kifreak.MultiThread.Shared\Kifreak.MultiThread.Shared.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.Common">
+      <HintPath>C:\Users\joaquinvizcaino\.nuget\packages\microsoft.testplatform.testhost\15.9.0\lib\netstandard1.5\Microsoft.VisualStudio.TestPlatform.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   
 </Project>

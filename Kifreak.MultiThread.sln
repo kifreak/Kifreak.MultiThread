@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2026
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Kifreak.MultiThread.Shared", "Kifreak.MultiThread.Shared\Kifreak.MultiThread.Shared.shproj", "{BD40CB31-2558-42C1-802D-111CA8211D9D}"
 EndProject
@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		multithread.nuspec = multithread.nuspec
-		Readme.txt = Readme.txt
+		Readme.md = Readme.md
 	EndProjectSection
 EndProject
 Global
@@ -39,24 +39,5 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5396520E-430A-4C6D-A7EB-000DF9175F0F}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://kistudio.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Kifreak.MultiThread.Shared\\Kifreak.MultiThread.Shared.shproj
-		SccProjectName1 = Kifreak.MultiThread.Shared
-		SccLocalPath1 = Kifreak.MultiThread.Shared
-		SccProjectUniqueName2 = Kifreak.MultiThread.Shared\\Kifreak.MultiThread.Shared.projitems
-		SccProjectTopLevelParentUniqueName2 = Kifreak.MultiThread.Shared\\Kifreak.MultiThread.Shared.shproj
-		SccProjectName2 = Kifreak.MultiThread.Shared
-		SccLocalPath2 = Kifreak.MultiThread.Shared
-		SccProjectUniqueName3 = Kifreak.MultiThread\\Kifreak.MultiThread.csproj
-		SccProjectName3 = Kifreak.MultiThread
-		SccLocalPath3 = Kifreak.MultiThread
-		SccProjectUniqueName4 = Kifreak.MultiThread.MainUnitTest\\Kifreak.MultiThread.MainUnitTest.csproj
-		SccProjectName4 = Kifreak.MultiThread.MainUnitTest
-		SccLocalPath4 = Kifreak.MultiThread.MainUnitTest
 	EndGlobalSection
 EndGlobal

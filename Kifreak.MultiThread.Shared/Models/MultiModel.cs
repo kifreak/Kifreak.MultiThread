@@ -1,7 +1,8 @@
 ﻿using System;
 
-namespace Kifreak.MultiThread.Shared
+namespace Kifreak.MultiThread.Shared.Models
 {
+    [Obsolete]
     public class MultiModel<T>
     {
         public T ObjectToSend { get; set; }

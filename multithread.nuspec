@@ -2,20 +2,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Kifreak.MultiThread</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <owners>Kifreak</owners>
     <authors>Kifreak</authors>
     <description>
-      Library for make an easy multithread application with progress count.
+      Library for make an easy multi-thread application with progress count.
     </description>
     <language>en-UK</language>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <iconUrl>https://raw.githubusercontent.com/kifreak/media/master/multithread.png</iconUrl>
-    <projectUrl>https://kifreak.com</projectUrl>
-    <tags>Multithread</tags>
+    <projectUrl>https://www.nuget.org/packages/Kifreak.MultiThread/</projectUrl>
+    <tags>Multi,Thread,MultiThreads</tags>
     <copyright>Copyright 2019, Kifreak</copyright>
     <releaseNotes>
-      Adapted to NetStandar and NetCore
+      Adapt library for work with Async Methods. Mark as Obsolete non async Methods.
     </releaseNotes>
     <dependencies>      
       <group targetFramework=".NETFramework4.5" />

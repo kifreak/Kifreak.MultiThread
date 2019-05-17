@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Kifreak.MultiThread.Shared.Models;
+
 // ReSharper disable UnusedMember.Global
 
 namespace Kifreak.MultiThread.Shared
 {
+    [Obsolete]
     public class MultiThreads<T>
     {
         private readonly SynchronizationContext _context;
