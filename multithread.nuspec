@@ -11,16 +11,16 @@
     <language>en-UK</language>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <iconUrl>https://raw.githubusercontent.com/kifreak/media/master/multithread.png</iconUrl>
-    <projectUrl>https://www.nuget.org/packages/Kifreak.MultiThread/</projectUrl>
+    <projectUrl>https://github.com/kifreak/Kifreak.MultiThread</projectUrl>
     <tags>Multi,Thread,MultiThreads</tags>
     <copyright>Copyright 2019, Kifreak</copyright>
     <releaseNotes>
       Adapt library for work with Async Methods. Mark as Obsolete non async Methods.
     </releaseNotes>
     <dependencies>      
-      <group targetFramework=".NETFramework4.5" />
-      <group targetFramework=".NETFramework4.5.1" />
-      <group targetFramework=".NETFramework4.5.2" />
+      <group targetFramework=".NETFramework4.7" />
+      <group targetFramework=".NETFramework4.7.1" />
+      <group targetFramework=".NETFramework4.7.2" />
       <group targetFramework=".NETFramework4.6" />
       <group targetFramework=".NETFramework4.6.1" />
       <group targetFramework=".NETFramework4.6.2" />
