@@ -63,7 +63,7 @@ namespace Kifreak.MultiThread.Shared.NewVersion
             return new ThreadModel
             {
                 Model = multiModel,
-                Task = Task.Run(() => { multiModel.ActionToExecute(token.Token); }, token.Token),
+                Task = Task.Run(() => { multiModel.ActionToExecute(token.Token); }, token.Token).ContinueWith(t => t,CancellationToken.None, TaskContinuationOptions.OnlyOnFaulted,TaskScheduler.FromCurrentSynchronizationContext()),
                 Token = token
             };
         }

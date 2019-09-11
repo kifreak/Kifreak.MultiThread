@@ -86,5 +86,23 @@ namespace Kifreak.MultiThread.MainUnitTest
             Assert.Equal(messageToCancel * multipleModelsList.Length, Resources.Shared.UrlList.Count);
             Assert.Equal((Resources.Shared.UrlList.Count / (double)(messagesToCreate * multipleModelsList.Length)), multiple.Progress());
         }
+
+        [Fact]
+
+        public async Task CreateMessageWithThrow()
+        {
+            int timeToWait = 1000;
+            Resources.Shared.UrlList = new List<string>();
+            IMultiple multiple = new Multiple();
+            multiple.Run(new IMultipleModel[]
+            {
+                new AddMessageModelException("Message 1",timeToWait),
+                new AddMessageModelException("Message 2",timeToWait*2),
+                new AddMessageModelException("Message 3",timeToWait*3),
+                new AddMessageModelException("Message 4",timeToWait*4),
+                new AddMessageModelException("Message 5",timeToWait*5),
+            });
+            await multiple.Wait();
+        }
     }
 }
