@@ -8,7 +8,6 @@ namespace Kifreak.MultiThread.Shared.Models
     {
         public CancellationTokenSource Token { get; set; }
         public Task Task { get; set; }
-
         public IMultipleModel Model { get; set; }
     }
 }

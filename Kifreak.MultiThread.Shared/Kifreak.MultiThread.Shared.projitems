@@ -16,14 +16,10 @@
     <Import_RootNamespace>Kifreak.MultiThread.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)IMultipleModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\MultiModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Multiple.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)MultiThreads.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factory\MultiTaskFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IMultipleModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MultipleBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ThreadModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IMultiple.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
   </ItemGroup>
 </Project>

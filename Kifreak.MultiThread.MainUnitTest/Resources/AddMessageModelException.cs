@@ -16,9 +16,11 @@ namespace Kifreak.MultiThread.MainUnitTest.Resources
             _milliseconds = milliseconds;
         }
 
+        public bool IsFinish { get; set; }
+
         public bool IsCompleted()
         {
-            return Shared.UrlList.Contains(_message);
+            return Shared.MessageList.Contains(_message);
         }
 
         public bool IsCanceled()
@@ -35,10 +37,6 @@ namespace Kifreak.MultiThread.MainUnitTest.Resources
         {
             await Task.Delay(_milliseconds, token);
             throw new Exception("Fail inserted message");
-            lock (Shared.UrlList)
-            {
-                Shared.UrlList.Add(_message);
-            }
         }
     }
 }

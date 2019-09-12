@@ -1,13 +1,5 @@
 # Kifreak.MultiThread
 
-**[Obsolete parte]**
-*Notes: Doesn't work with Async Methods.*
-1) Instantiate an array of MultiModel with:
-		- Functions to execute
-		- Parameter to Send to the action (List, string ,etc).
-2) Instantiate MulTithreads with Static Init Method. And Call RunAsync.
-* See UnitTest for an code Example.
-
 **Async Methods (new part)**
 1) Create a class inherit from IMultipleModel. Have 4 methods:
     - ActionToExecute (CancellationToken): Action to execute in the Thread.

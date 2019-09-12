@@ -11,7 +11,6 @@ namespace Kifreak.MultiThread.MainUnitTest.Resources
         private readonly int _numberOfMessages;
         private readonly int _messageToCancel;
         private readonly int _delayInEachMessage;
-        private bool _isCompleted;
         private bool _isCancelled;
         private readonly List<string> _urls = new List<string>();
 
@@ -23,9 +22,11 @@ namespace Kifreak.MultiThread.MainUnitTest.Resources
             _delayInEachMessage = delayInEachMessage;
         }
 
+        public bool IsFinish { get; set; }
+
         public bool IsCompleted()
         {
-            return _isCompleted;
+            return Progress() >= 100;
         }
 
         public bool IsCanceled()
@@ -47,20 +48,19 @@ namespace Kifreak.MultiThread.MainUnitTest.Resources
                     if (token.IsCancellationRequested)
                     {
                         _isCancelled = true;
+                        IsFinish = true;
                         token.ThrowIfCancellationRequested();
                     }
                 }
                 _urls.Add($"{_id} Message {i}");
-                lock (Shared.UrlList)
+                lock (Shared.MessageList)
                 {
-                    Shared.UrlList.Add($"{_id} Message {i}");
+                    Shared.MessageList.Add($"{_id} Message {i}");
                 }
 
                 // ReSharper disable once MethodSupportsCancellation
                 await Task.Delay(_delayInEachMessage);
             }
-
-            _isCompleted = true;
         }
     }
 }

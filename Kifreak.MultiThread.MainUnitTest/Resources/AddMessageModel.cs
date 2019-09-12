@@ -15,9 +15,11 @@ namespace Kifreak.MultiThread.MainUnitTest.Resources
             _milliseconds = milliseconds;
         }
 
+        public bool IsFinish { get; set; }
+
         public bool IsCompleted()
         {
-            return Shared.UrlList.Contains(_message);
+            return Shared.MessageList.Contains(_message);
         }
 
         public bool IsCanceled()
@@ -34,9 +36,9 @@ namespace Kifreak.MultiThread.MainUnitTest.Resources
         {
             await Task.Delay(_milliseconds, token);
 
-            lock (Shared.UrlList)
+            lock (Shared.MessageList)
             {
-                Shared.UrlList.Add(_message);
+                Shared.MessageList.Add(_message);
             }
         }
     }
