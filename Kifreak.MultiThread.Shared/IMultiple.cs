@@ -7,7 +7,6 @@ namespace Kifreak.MultiThread.Shared.NewVersion
 {
     public interface IMultiple : IDisposable
     {
-
         List<ThreadModel> TaskList { get; }
 
         void Run(IEnumerable<IMultipleModel> models);

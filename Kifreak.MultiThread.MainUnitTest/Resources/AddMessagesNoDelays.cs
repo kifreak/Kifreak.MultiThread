@@ -62,5 +62,10 @@ namespace Kifreak.MultiThread.MainUnitTest.Resources
                 await Task.Delay(_delayInEachMessage);
             }
         }
+
+        public Task ActionAfterComplete()
+        {
+            return Task.CompletedTask;
+        }
     }
 }

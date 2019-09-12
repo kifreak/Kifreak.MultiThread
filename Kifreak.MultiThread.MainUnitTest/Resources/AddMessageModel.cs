@@ -41,5 +41,10 @@ namespace Kifreak.MultiThread.MainUnitTest.Resources
                 Shared.MessageList.Add(_message);
             }
         }
+
+        public Task ActionAfterComplete()
+        {
+            return Task.CompletedTask;
+        }
     }
 }

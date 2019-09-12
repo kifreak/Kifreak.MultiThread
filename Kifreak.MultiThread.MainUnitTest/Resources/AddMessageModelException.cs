@@ -38,5 +38,10 @@ namespace Kifreak.MultiThread.MainUnitTest.Resources
             await Task.Delay(_milliseconds, token);
             throw new Exception("Fail inserted message");
         }
+
+        public Task ActionAfterComplete()
+        {
+            return Task.CompletedTask;
+        }
     }
 }

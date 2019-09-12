@@ -6,7 +6,7 @@
 //   Defines the MultiTaskFactory type.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-using System;
+
 using System.Threading;
 using System.Threading.Tasks;
 using Kifreak.MultiThread.Shared.NewVersion;
@@ -18,7 +18,7 @@ namespace Factory
     /// </summary>
     public class MultiTaskFactory
     {
-        public Task ExecuteTask(IMultipleModel model, Action<Task> completeTask, CancellationToken token)
+        public Task ExecuteTask(IMultipleModel model, CancellationToken token)
         {
             return Task.Run(async () =>
                 {
@@ -27,7 +27,7 @@ namespace Factory
                 }, token)
                 .ContinueWith((task) =>
                 {
-                    completeTask.Invoke(task);
+                    model.ActionAfterComplete();
                     model.IsFinish = true;
                     return task;
 

@@ -1,25 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Factory;
 using Kifreak.MultiThread.MainUnitTest.Resources;
-using Kifreak.MultiThread.Shared.Models;
 using Kifreak.MultiThread.Shared.NewVersion;
 using Xunit;
-using Xunit.Abstractions;
 
 namespace Kifreak.MultiThread.MainUnitTest
 {
     public class AsyncMultipleUnitTests
     {
-        private readonly ITestOutputHelper _testOutputHelper;
-
-        public AsyncMultipleUnitTests(ITestOutputHelper testOutputHelper)
-        {
-            _testOutputHelper = testOutputHelper;
-        }
-
         [Fact]
         public async Task CreateMessagesOk()
         {

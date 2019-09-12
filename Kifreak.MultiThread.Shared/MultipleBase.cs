@@ -10,7 +10,7 @@ namespace Kifreak.MultiThread.Shared.NewVersion
     public class MultipleBase : IMultiple
     {
         private readonly MultiTaskFactory _taskFactory;
-        public List<ThreadModel> TaskList { get; private set; }
+        public List<ThreadModel> TaskList { get; }
 
         public MultipleBase(MultiTaskFactory factory)
         {
@@ -37,7 +37,7 @@ namespace Kifreak.MultiThread.Shared.NewVersion
 
         public virtual double Progress()
         {
-            return TaskList.Sum(t => t.Model.Progress()) / (double)TaskList.Count;
+            return TaskList.Sum(t => t.Model.Progress()) / TaskList.Count;
         }
 
         public void CancelTask(ThreadModel taskModel)
@@ -58,15 +58,9 @@ namespace Kifreak.MultiThread.Shared.NewVersion
             return new ThreadModel
             {
                 Model = model,
-                Task = _taskFactory.ExecuteTask(model, (task) => SetCompleted(task), token.Token),
+                Task = _taskFactory.ExecuteTask(model,token.Token),
                 Token = token
             };
-        }
-
-        private Task SetCompleted(Task task)
-        {
-            TaskList.FirstOrDefault(t => t.Task.Id == task.Id)?.Model.IsCompleted();
-            return task;
         }
 
         #endregion Private Methods
