@@ -13,6 +13,8 @@ namespace Kifreak.MultiThread.Shared.NewVersion
 
         double Progress();
 
+        object Response { get; }
+
         Task ActionToExecute(CancellationToken token);
 
         Task ActionAfterComplete();

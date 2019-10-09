@@ -18,6 +18,7 @@ namespace Kifreak.MultiThread.MainUnitTest.Resources
 
         public bool IsFinish { get; set; }
 
+        public object Response { get; private set; }
         public bool IsCompleted()
         {
             return Shared.MessageList.Contains(_message);
@@ -32,11 +33,12 @@ namespace Kifreak.MultiThread.MainUnitTest.Resources
         {
             return IsCompleted() ? 100 : 0;
         }
-
+        
         public async Task ActionToExecute(CancellationToken token)
         {
             await Task.Delay(_milliseconds, token);
-            throw new Exception("Fail inserted message");
+            Response = new Exception("Fail inserted message");
+            throw (Exception)Response;
         }
 
         public Task ActionAfterComplete()

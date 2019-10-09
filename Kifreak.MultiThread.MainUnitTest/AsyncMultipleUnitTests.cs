@@ -31,6 +31,27 @@ namespace Kifreak.MultiThread.MainUnitTest
         }
 
         [Fact]
+        public async Task CreateMessagesWithResponseOk()
+        {
+            int timeToWait = 100;
+            Resources.Shared.MessageList = new List<string>();
+            IMultiple multiple = GetMultiple();
+            IMultipleModel[] models = {
+                new AddMessageModel("Message 1", timeToWait),
+                new AddMessageModel("Message 2", timeToWait * 2),
+                new AddMessageModel("Message 3", timeToWait * 3),
+                new AddMessageModel("Message 4", timeToWait * 4),
+                new AddMessageModel("Message 5", timeToWait * 5),
+            };
+            multiple.Run(models);
+            await multiple.Wait();
+            Assert.Equal(models.Length, Resources.Shared.MessageList.Count);
+            Assert.Equal(models.Length, Resources.Shared.MessageList.GroupBy(t => t).Count()); //Must be Different messages
+            Assert.Equal(multiple.TaskList.Count, multiple.TaskList.Count(t => t.Task.IsCompleted)); //All task must end with completed status
+            Assert.DoesNotContain(multiple.TaskList, t => !(bool)t.Model.Response);
+        }
+
+        [Fact]
         public async Task CreateMessageCancelAll()
         {
             Resources.Shared.MessageList = new List<string>();
@@ -116,7 +137,7 @@ namespace Kifreak.MultiThread.MainUnitTest
 
         private IMultiple GetMultiple()
         {
-            return new MultipleBase(new MultiTaskFactory());
+            return new MultipleBase();
         }
         
 

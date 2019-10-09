@@ -24,6 +24,8 @@ namespace Kifreak.MultiThread.MainUnitTest.Resources
 
         public bool IsFinish { get; set; }
 
+        public object Response { get; private set; }
+
         public bool IsCompleted()
         {
             return Progress() >= 100;
@@ -38,7 +40,7 @@ namespace Kifreak.MultiThread.MainUnitTest.Resources
         {
             return _urls.Count / (double)_numberOfMessages;
         }
-
+        
         public async Task ActionToExecute(CancellationToken token)
         {
             for (var i = 0; i < _numberOfMessages; i++)

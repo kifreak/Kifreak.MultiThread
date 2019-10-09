@@ -16,15 +16,11 @@ namespace Factory
     /// <summary>
     /// The MultiTaskFactory class
     /// </summary>
-    public class MultiTaskFactory
+    public static class MultiTaskFactory
     {
-        public Task ExecuteTask(IMultipleModel model, CancellationToken token)
+        public static Task ExecuteTask(IMultipleModel model, CancellationToken token)
         {
-            return Task.Run(async () =>
-                {
-                    await model.ActionToExecute(token);
-                    //taskAction.Wait(token);
-                }, token)
+            return Task.Run(async () => await model.ActionToExecute(token).ConfigureAwait(true), token)
                 .ContinueWith((task) =>
                 {
                     model.ActionAfterComplete();

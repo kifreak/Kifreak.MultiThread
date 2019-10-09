@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Kifreak.MultiThread</id>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <owners>Kifreak</owners>
     <authors>Kifreak</authors>
     <description>
@@ -16,6 +16,9 @@
     <copyright>Copyright 2019, Kifreak</copyright>
     <releaseNotes>
       Adapt library for work with Async Methods. Mark as Obsolete non async Methods.
+      Version 1.0.5
+      Add the possibility to get a Result in each Thread (throw property in ThreadModel => Response).
+      Reformat MultiTaskFactory: Now is a static class.
     </releaseNotes>
     <dependencies>      
       <group targetFramework=".NETFramework4.7" />

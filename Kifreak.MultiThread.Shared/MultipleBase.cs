@@ -9,12 +9,10 @@ namespace Kifreak.MultiThread.Shared.NewVersion
 {
     public class MultipleBase : IMultiple
     {
-        private readonly MultiTaskFactory _taskFactory;
         public List<ThreadModel> TaskList { get; }
 
-        public MultipleBase(MultiTaskFactory factory)
+        public MultipleBase()
         {
-            _taskFactory = factory;
             TaskList = new List<ThreadModel>();
         }
 
@@ -58,7 +56,7 @@ namespace Kifreak.MultiThread.Shared.NewVersion
             return new ThreadModel
             {
                 Model = model,
-                Task = _taskFactory.ExecuteTask(model,token.Token),
+                Task = MultiTaskFactory.ExecuteTask(model,token.Token),
                 Token = token
             };
         }
